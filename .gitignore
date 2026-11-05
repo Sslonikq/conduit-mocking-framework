@@ -1,0 +1,36 @@
+# Виртуальное окружение
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Pytest / покрытие
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Allure
+allure-results/
+allure-report/
+
+# Playwright: артефакты упавших тестов
+test-results/
+playwright-report/
+*.trace.zip
+
+# Секреты
+.env
+
+# IDE / ОС
+.idea/
+.vscode/
+Thumbs.db
+.DS_Store
+
+# har/ НЕ игнорируем: HAR-файлы — это фикстуры для route_from_har,
+# без них стаб-тесты не запустятся. Перед коммитом вычищать токены и куки.
